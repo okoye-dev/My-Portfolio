@@ -19,11 +19,12 @@ const Hero: FC<IProps> = () => {
         <span className="bg-gradient-to-r from-orange-400 to-purple-400 bg-clip-text text-lg font-bold text-transparent lg:text-xl">
           Okoye Divine
         </span>{" "}
-        is a passionate, detail-oriented Software Engineer that's been building
+        is a passionate, detail-oriented Software Engineer that's been buillding
         and tinkering with apps for over 3 years.
       </p>
-      <div>
-        <Button text="Resume" />
+      <div className="flex items-center justify-center gap-4">
+        <Button variant="light">Github</Button>
+        <Button>Resume</Button>
       </div>
     </div>
   );
