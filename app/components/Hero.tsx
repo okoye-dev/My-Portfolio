@@ -1,30 +1,34 @@
 "use client";
 import React, { FC } from "react";
 import Button from "./Button";
+import GradientText from "./GradientText";
 
 interface IProps {}
 
 const Hero: FC<IProps> = () => {
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center gap-3 px-10">
-      <h1 className="text-center text-4xl font-bold text-white sm:max-w-lg lg:max-w-2xl lg:text-6xl">
-        Software Development as an art, a{" "}
-        <span className="relative pl-3 text-purple-700">
-          {" "}
-          <span className="absolute -z-10 h-6 w-40 -translate-x-1 translate-y-2 -rotate-[5deg] skew-x-[20deg] rounded-xl bg-gradient-to-tr from-cyan-200 to-indigo-400"></span>
-          process
-        </span>
+    <div className="flex h-screen w-full flex-col items-center justify-center gap-5 px-10">
+      <small className="flex translate-y-3 items-center rounded-lg bg-white/10 px-2 py-1 text-[8px] opacity-80 sm:text-xs">
+        BUILDING THINGS THAT MATTER
+      </small>
+      <h1 className="w-full text-balance text-center text-3xl font-bold leading-8 text-white sm:max-w-lg sm:text-nowrap sm:text-4xl md:text-5xl lg:max-w-2xl lg:text-6xl">
+        Software Development <br className="hidden sm:flex" />
+        as an art, a
+        <GradientText purple className="pl-2">
+          Process.
+        </GradientText>
       </h1>
-      <p className="max-w-2xl text-center lg:text-lg">
-        <span className="bg-gradient-to-r from-orange-400 to-purple-400 bg-clip-text text-lg font-bold text-transparent lg:text-xl">
+      <p className="max-w-2xl text-balance text-center text-sm sm:text-lg">
+        <GradientText className="pr-1 text-lg lg:text-xl">
           Okoye Divine
-        </span>{" "}
-        is a passionate, detail-oriented Software Engineer that's been buillding
-        and tinkering with apps for over 3 years.
+        </GradientText>
+        is a passionate, detail-oriented Software Engineer{" "}
+        <br className="hidden sm:flex" /> that's been buillding and tinkering
+        with apps for over 3 years.
       </p>
-      <div className="flex items-center justify-center gap-4">
-        <Button variant="light">Github</Button>
-        <Button>Resume</Button>
+      <div className="flex items-center justify-center gap-3">
+        <Button>Github</Button>
+        <Button variant="light">Resume</Button>
       </div>
     </div>
   );

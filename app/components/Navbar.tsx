@@ -1,15 +1,14 @@
 import React, { FC } from "react";
+import GradientText from "./GradientText";
 
 interface IProps {}
 
 const Navbar: FC<IProps> = (props) => {
   return (
-    <nav className="flex absolute w-full justify-start py-6 px-8">
+    <nav className="absolute flex w-full justify-start px-8 py-6 sm:px-12 lg:w-fit xl:px-0">
       <div className="text-2xl tracking-tighter text-gray-200">
         Okoye
-        <span className="bg-gradient-to-tr from-purple-400 to-orange-500 bg-clip-text font-bold text-transparent">
-          Dev
-        </span>
+        <GradientText>Dev</GradientText>
       </div>
     </nav>
   );

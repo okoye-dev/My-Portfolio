@@ -11,7 +11,7 @@ const Button: FC<ButtonProps> = ({ children, icon, variant }) => {
   return (
     <button
       type="button"
-      className={`flex items-center gap-3 rounded-full py-1 pl-1 pr-5 ${variant == "light" ? "border-none bg-white/90 text-black" : "border bg-white/10 border-gray-600"}`}
+      className={`flex items-center gap-3 rounded-full py-1 pl-1 pr-5 text-sm sm:text-base ${variant == "light" ? "border-none bg-white/90 text-black" : "border border-gray-600 bg-white/10"}`}
     >
       <Image
         src={icon ?? ""}
