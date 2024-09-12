@@ -6,10 +6,10 @@ interface IProps {}
 
 const Timeline: FC<IProps> = (props) => {
   return (
-    <section className="flex min-h-[44rem] w-full flex-col items-center justify-center overflow-hidden rounded-[3rem] border border-gray-600 bg-gradient-to-br from-indigo-600/10 px-8 pb-12 sm:min-h-[40rem] sm:rounded-[4rem] sm:pb-0 md:pt-10">
+    <section className="flex w-full flex-col items-center justify-center rounded-[3rem] border border-gray-600 bg-gradient-to-br from-indigo-600/10 p-10">
       <GradientText
         purple
-        className="-mt-4 flex w-full justify-center pb-8 pr-1 text-4xl sm:pb-12 sm:text-5xl lg:text-6xl"
+        className="flex w-full justify-center pb-8 pr-1 text-4xl sm:pb-10 sm:text-5xl lg:text-6xl"
       >
         Timeline
       </GradientText>
@@ -29,7 +29,7 @@ const Timeline: FC<IProps> = (props) => {
             <strong>Software Development</strong>, and hasn't looked back since.
           </div>
         </Bubble>
-      </div>{" "}
+      </div>
       <div className="flex w-full gap-1 pt-1">
         <Bubble
           variant={"single"}
@@ -50,7 +50,7 @@ const Timeline: FC<IProps> = (props) => {
         <Bubble
           variant={"single"}
           wide
-          className="absolute right-10 max-w-60 translate-y-[5.5rem] bg-gradient-to-tr from-purple-400 text-gray-800 sm:relative sm:right-0 sm:translate-y-0"
+          className="absolute right-12 max-w-60 translate-y-[5.25rem] bg-gradient-to-tr from-purple-400 text-gray-800 sm:relative sm:right-0 sm:translate-y-0"
         >
           <strong className="">
             FullStack <br /> Engineer.
@@ -59,7 +59,7 @@ const Timeline: FC<IProps> = (props) => {
       </div>
       <Bubble
         nowrap
-        className="mt-12 translate-y-[5.5rem] border border-gray-600 bg-gradient-to-tr from-purple-400/30 text-lg font-bold tracking-tighter text-gray-300 sm:translate-y-0 sm:text-2xl lg:text-3xl"
+        className="mt-28 border border-gray-600 bg-gradient-to-tr from-purple-400/30 text-base font-bold tracking-tighter text-gray-300 sm:mt-10 sm:text-2xl lg:text-3xl"
       >
         <ul className="flex gap-3 sm:gap-5">
           <li> Aug. 2021</li>
