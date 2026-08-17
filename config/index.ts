@@ -91,7 +91,7 @@ export const CONFIG = {
     {
       name: "Github",
       img: github,
-      link: "https://figma.com/okoye-dev",
+      link: "https://github.com/okoye-dev",
     },
   ],
 };
