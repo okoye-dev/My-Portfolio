@@ -1,19 +1,21 @@
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Technologies from "./components/Technologies";
-import Timeline from "./components/Timeline";
+import CaseStudies from "@/components/CaseStudies";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import ScopeOfWork from "@/components/ScopeOfWork";
+import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className="flex justify-center gap-16">
-      <main className="flex flex-col items-center gap-8 overflow-hidden sm:items-start lg:max-w-5xl">
+    <div className="flex min-h-screen justify-center bg-bg pt-6 text-gray-white">
+      <div className="relative max-w-[100rem] overflow-y-hidden">
         <Navbar />
         <Hero />
-        <div className="px-2">
-          <Timeline />
-        </div>
-        <Technologies />
-      </main>
+        <ScopeOfWork />
+        <CaseStudies />
+        <WorkExperience />
+        <Footer />
+      </div>
     </div>
   );
 }

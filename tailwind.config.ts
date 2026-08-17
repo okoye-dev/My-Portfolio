@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "selector",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,9 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "440px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: "#13121A",
+        gray: {
+          white: "#F0F0F0",
+        },
+      },
+      animation: {
+        "spin-slow": "spin 8s linear infinite",
+      },
+      keyframes: {
+        "spin-slow": {
+          to: { transform: "rotate(360deg)" },
+        },
       },
     },
   },
