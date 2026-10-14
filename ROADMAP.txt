@@ -10,6 +10,29 @@ The new site lives at the normal routes: / , /projects , /blog , /personal.
 The previous design is kept at /v1 so it can be opened any time. Its code is in app/v1 and the old components folder files (Hero, Navbar and so on).
 Design rules, colours and references are in DESIGN.txt.
 
+PHASE 0C: POLISH PASS (done)
+[x] Index text smaller, with no orange
+[x] Logo reads Okoye Divine. with a larger Divine
+[x] All notes is a small orange pill
+[x] One pill size everywhere, including the contact block
+[x] Arrow hover: a small move to the right and a slight downward tip
+[x] Cover images no longer shrink on hover
+[x] Outside of work and Visit personal are smaller
+[x] More space between the home page sections, with the compact part still within two screens
+
+PHASE 0B: HOME PAGE AS A NOTEBOOK INDEX (done)
+[x] Home page rebuilt as a hybrid of an engineering notebook, a product portfolio and a technical publication
+[x] Small hero text, and three small buttons: Selected work, Engineering notes, Github
+[x] The old section headers are now one-line links in an Index, all visible on the first screen
+[x] Selected work shown as captioned figures (Fig. 01, Fig. 02), and a Latest field notes list
+[x] Everything on the home page is a link
+[x] The home page, apart from the personal grid, stays within two screens on phone, tablet and desktop
+[x] The personal grid is kept in full and is not limited by the two screen rule
+[x] /experience page added, and a page for each field note at /blog/<name>
+[ ] Write the three field notes (their pages say "still being written" for now)
+[ ] Decide if Experience should also appear in the side menu (it is reachable from the Index for now)
+[ ] The About section was dropped from the home page because it repeated the hero and the story. Say if you want it back
+
 PHASE 0: BASELINE (done in this first pass)
 [x] Move the old homepage to /v1 so it is still reachable
 [x] Beige paper background with a dull dark purple accent

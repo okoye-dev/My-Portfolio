@@ -22,19 +22,19 @@ export default function Section({
     <section
       id={id}
       className={cn(
-        "reveal mx-auto w-full max-w-[90rem] px-5 pt-28 md:px-10 md:pt-40 xl:px-16",
+        "reveal mx-auto w-full max-w-[90rem] px-5 pt-20 md:px-10 md:pt-28 xl:px-16",
         className,
       )}
     >
       <div className="border-t border-ink/15 pt-6">
-        <div className="flex items-start justify-between gap-6">
+        <div className="flex items-center justify-between gap-6">
           <p className="label text-ink-soft">{label}</p>
           {action}
         </div>
-        <h2 className="mt-10 max-w-[18ch] font-display text-[clamp(2.5rem,6vw,5.5rem)] font-light leading-[1] tracking-[-0.03em] text-ink">
+        <h2 className="mt-6 font-display text-[clamp(1.5rem,2.8vw,2.4rem)] font-light leading-[1.1] tracking-[-0.02em] text-ink">
           {title}
         </h2>
-        <div className="mt-14 md:mt-20">{children}</div>
+        <div className="mt-8 md:mt-10">{children}</div>
       </div>
     </section>
   );
