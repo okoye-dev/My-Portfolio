@@ -1,0 +1,46 @@
+DESIGN NOTES FOR THE NEW PORTFOLIO
+
+Identity
+A product-minded, software and AI engineer. The site should feel personal and calm, not like a template.
+
+References and what we take from each
+apple.com: the roundness. Cards have large soft corners, buttons are full pills (Apple uses a radius of 980px). One idea per screen, lots of room, large type, and motion that eases in and never bounces. Its text colour is a warm near-black, never pure black.
+fiasco.design: restraint. A muted background, one centred statement set in a light font, and very little else on screen. The menu is a single word.
+unseen.co: the display type and the side bar. Their headline mixes a light italic serif with a plain sans. Their menu is a round button that slides in a panel from the right, with huge light serif links and tiny numbers beside them. The page moves aside to make room.
+Apple keynote bento slide (the iPhone 14 Pro "Bento Box" slide): one big product tile in the middle with tiles of every size packed tightly around it. Each tile holds a single big word or number, centred. Gaps are small and every tile has the same corner radius. Apple.com tiles use a 28px radius. This is the model for the personal grid.
+Mobbin: not reachable yet. It needs your login, so it is on the roadmap as a decision for you.
+
+Colour
+Paper (background) is #EFE7D6, a warm Ghibli-style beige.
+Paper deep (empty blocks, cards) is #E6DCC6.
+Cream (the menu panel) is #F6F0E3.
+Ink (text) is #2B2430, a near-black with a hint of purple.
+Ink soft (small and secondary text) is #6B6258.
+Orange is #D9601E, a warm burnt orange, used as a second accent. Orange deep is #B8470F for small text such as the email, which needs more contrast. Orange light is #F29A52 for the dark footer block. Orange is used on "product-minded" in the hero, the word "here" in the story heading, the word "worked", the email links, "worth building?" in the footer, and for hovers inside the menu panel only.
+Accent is #5A4A68, a dull dark purple. It is used for hovers outside the menu, the active menu item, the word "there" in the story heading and the text selection. If purple appears everywhere, it has stopped meaning anything.
+
+Type
+Display: Sentient Extra Light and Extra Light Italic, its thinnest weights. Used for headings, the logo and the menu links. It is free for commercial use through Fontshare.
+Text: Area Normal Extralight for small text and Area Normal Hairline for the biggest sans lines. It comes from the trial files, so it needs a proper licence before launch.
+Numbers: Hanken Grotesk Extra Light, for the small 01, 02, 03 markers. Still open for review.
+Headings are large, tight and light. Small labels are capital letters with wide spacing. Never use bold.
+
+Shape
+Cards and grid tiles use a 28px corner. The footer block uses 32 to 40px. Buttons and tags are full pills. Lines are 1px at about 15 percent ink.
+
+Motion
+Everything uses one soft curve, cubic-bezier(0.32, 0.72, 0, 1), which is close to the curve Apple uses for sheets.
+The hero text rises in once on load. Sections ease in as they scroll into view, using plain CSS with no script.
+Respect the system setting for reduced motion everywhere.
+
+How to keep it from looking made by AI
+No glowing gradients, no purple-to-blue gradients, no emoji and no icon in a circle above every heading.
+No grid of identical cards with identical copy. Vary sizes and rhythm, like the staggered personal grid.
+Use real words and real names. Empty states say plainly what will go there.
+Mix the italic serif and the sans inside one headline, the way a designer would, instead of one uniform style.
+Use hairlines and spacing for structure, not shadows and boxes.
+Keep the accent colour rare.
+
+Routes
+/ is the home page. /projects, /blog, /story and /personal are the main pages. /v1 is the previous design.
+Menu links and site details are kept in config/site.ts so they change in one place.

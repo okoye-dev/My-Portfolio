@@ -1,0 +1,97 @@
+ROADMAP FOR THE NEW PORTFOLIO
+
+How to read this file: [x] means done, [ ] means not done yet. Items are in the order I suggest doing them. Edit freely.
+
+The goal
+A personal brand site for a product-minded software and AI engineer. It should feel calm, rounded and flowing like apple.com, with the confident type of unseen.co and the quiet restraint of fiasco.design. It must not look like it was made by an AI tool.
+
+Where to find things
+The new site lives at the normal routes: / , /projects , /blog , /personal.
+The previous design is kept at /v1 so it can be opened any time. Its code is in app/v1 and the old components folder files (Hero, Navbar and so on).
+Design rules, colours and references are in DESIGN.txt.
+
+PHASE 0: BASELINE (done in this first pass)
+[x] Move the old homepage to /v1 so it is still reachable
+[x] Beige paper background with a dull dark purple accent
+[x] Italic display serif (Sentient Extra Light) mixed with a light sans (Area Normal), like the unseen.co headline
+[x] Round menu button that opens a side bar panel, with the page sliding aside (unseen.co style)
+[x] Personal section as a release-page style grid: one big tile in the middle, tiles of every size around it, on the home page and on /personal
+[x] Home page skeleton: hero, about, selected projects, experience, writing, personal, contact
+[x] Pages for projects, blog and personal, with honest empty states
+[x] Rounded cards and pill buttons, soft scroll-in animation, reduced motion respected
+
+PHASE 1: DECISIONS ONLY YOU CAN MAKE
+[x] Tried a hover loop of ten typefaces in the menu and removed it: too many fonts to keep consistent
+[ ] Confirm the font pair. Sentient and Area Normal are in place, but Area is a trial licence
+[ ] Buy the Area licence, or switch to the Adobe Fonts link, before the site goes live
+[ ] Decide if the number font (Hanken Grotesk Extra Light) stays, or if Area handles numbers too
+[ ] Confirm the exact beige and purple (see DESIGN.txt) after seeing them on a real screen
+[ ] Decide the headline wording and the one sentence that describes you
+[x] Contact email set to dpokoye@gmail.com (kept in config/site.ts)
+[ ] Sign in to Mobbin in the browser pane so I can use it for reference research
+
+PHASE 2: PERSONAL BRANDING
+[ ] Write the about section (who you are, how you think, where AI fits)
+[ ] Add a portrait or a signature image that suits the paper look
+[ ] Short bio line and location for the hero
+[ ] Social links check (GitHub, LinkedIn, anything else)
+[ ] Social share image and the browser tab icon
+
+PHASE 2B: MY STORY (a page about my life and how I grew into this field)
+[x] Story page at /story with six chapters ready to fill in
+[x] Short version on the home page with a button to the long version
+[x] Story added to the menu and the header
+[ ] Write the short version for the home page (a few honest sentences)
+[ ] Write each chapter on /story in my own words
+[ ] Add a few personal photos, set in the same rounded style
+[ ] Decide if the chapter names should change
+
+PHASE 3: PROJECTS
+[x] Projects list set to Tonderbot and LapisArchive for now
+[ ] Tonderbot case study page: problem, your role, decisions, result, screenshots
+[ ] LapisArchive case study page, same structure
+[ ] Cover images for both cards
+[ ] Tags for each project (left empty until you choose them)
+[ ] A page route per project (/projects/tonderbot and so on)
+[ ] A calm hover and page transition between the list and a case study
+
+PHASE 4: WORK EXPERIENCE
+[x] Experience list set to ActiveGiving (most recent) and Kolanut Africa, which links to kolanutafrica.com
+[ ] Add the real role and dates for ActiveGiving and Kolanut Africa (they show as "to come" for now)
+[ ] Decide the layout: simple list on the home page, or a full page with detail
+[ ] Add one line of impact per role, written in plain words
+
+PHASE 5: BLOG ON ENGINEERING EXCELLENCE
+[ ] Choose how posts are written (markdown files in the repo is the simplest)
+[ ] Post page layout: comfortable reading width, serif headings, code blocks
+[ ] First three post ideas written down
+[ ] Reading time, dates and a simple tag list
+[ ] RSS feed
+
+PHASE 6: PERSONAL SECTION (art and more)
+[ ] Decide what lives here: art, sketches, photos, experiments
+[ ] Replace the placeholder words in the grid tiles with real pieces, one per tile
+[ ] Add the first pieces to /personal
+[ ] A gentle full-screen view when a piece is clicked
+[ ] Short notes under each piece
+
+PHASE 7: INTERACTION AND POLISH
+[ ] Page-to-page transitions that feel continuous, like apple.com
+[ ] Cursor behaviour on project cards (a soft label that follows the mouse)
+[x] First check at 350, 375, 768, 1024, 1440 and 1920 wide: no sideways scrolling, grid has no gaps, menu centred
+[ ] Check on real phones and a real wide monitor, and look at every page, not only the home page
+[ ] Keyboard use and screen reader check for the menu and links
+[ ] Contrast check for the purple accent on beige
+[ ] Performance: image sizes, font loading, no layout jumps
+
+PHASE 8: LAUNCH
+[ ] Real domain and hosting
+[ ] Final font licence in place
+[ ] Page titles, descriptions and the sitemap
+[ ] Remove /v1 from the public site, or hide it from search engines
+[ ] Remove unused old components once /v1 is no longer needed
+
+IDEAS PARKED FOR LATER
+Sound on or off like unseen.co (probably not).
+A small "now" section about what you are working on this month.
+A uses page listing the tools you work with.
