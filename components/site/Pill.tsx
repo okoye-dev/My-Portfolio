@@ -2,10 +2,24 @@ import Link from "next/link";
 import { cn } from "@/utils";
 import Arrow from "./Arrow";
 
+/** One pill size for the whole site. Only the colours change. */
+const BASE =
+  "group inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[0.78rem] leading-none transition-colors duration-500";
+
+const VARIANTS = {
+  solid: "bg-ink text-paper hover:bg-accent",
+  ghost: "border border-ink/20 text-ink hover:border-accent hover:text-accent",
+  orange:
+    "border border-orange text-orange-deep hover:bg-orange hover:text-paper",
+  /** For the dark contact block */
+  paper: "border border-paper bg-paper text-orange-deep hover:bg-cream",
+  line: "border border-paper/25 text-paper hover:border-paper",
+};
+
 interface IProps {
   href: string;
   children: React.ReactNode;
-  variant?: "solid" | "ghost";
+  variant?: keyof typeof VARIANTS;
   className?: string;
 }
 
@@ -15,19 +29,31 @@ export default function Pill({
   variant = "solid",
   className,
 }: IProps) {
+  const classes = cn(BASE, VARIANTS[variant], className);
+  const arrow = (
+    <Arrow className="h-[0.8em] w-[0.8em] transition-transform duration-150 ease-out group-hover:translate-x-0.5 group-hover:rotate-[15deg]" />
+  );
+
+  if (href.startsWith("mailto:")) {
+    return (
+      <a href={href} className={classes}>
+        {children}
+        {arrow}
+      </a>
+    );
+  }
+  if (/^https?:/.test(href)) {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className={classes}>
+        {children}
+        {arrow}
+      </a>
+    );
+  }
   return (
-    <Link
-      href={href}
-      className={cn(
-        "group inline-flex items-center gap-2 rounded-full px-6 py-3 text-[0.95rem] transition-colors duration-500",
-        variant === "solid"
-          ? "bg-ink text-paper hover:bg-accent"
-          : "border border-ink/20 text-ink hover:border-accent hover:text-accent",
-        className,
-      )}
-    >
+    <Link href={href} className={classes}>
       {children}
-      <Arrow className="h-[0.7em] w-[0.7em] transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+      {arrow}
     </Link>
   );
 }

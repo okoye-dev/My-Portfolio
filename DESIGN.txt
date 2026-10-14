@@ -16,7 +16,7 @@ Paper deep (empty blocks, cards) is #E6DCC6.
 Cream (the menu panel) is #F6F0E3.
 Ink (text) is #2B2430, a near-black with a hint of purple.
 Ink soft (small and secondary text) is #6B6258.
-Orange is #D9601E, a warm burnt orange, used as a second accent. Orange deep is #B8470F for small text such as the email, which needs more contrast. Orange light is #F29A52 for the dark footer block. Orange is used on "product-minded" in the hero, the word "here" in the story heading, the word "worked", the email links, "worth building?" in the footer, and for hovers inside the menu panel only.
+Orange is #D9601E, a warm burnt orange, used as a second accent. Orange deep is #B8470F for small text such as the email, which needs more contrast. Orange light is #F29A52 for the dark footer block. Orange is used on "product-minded" in the hero, the email links, the heading in the contact block, the All notes pill, the Experience page heading, and for hovers inside the menu panel only. The Index on the home page has no orange.
 Accent is #5A4A68, a dull dark purple. It is used for hovers outside the menu, the active menu item, the word "there" in the story heading and the text selection. If purple appears everywhere, it has stopped meaning anything.
 
 Type
@@ -24,6 +24,9 @@ Display: Sentient Extra Light and Extra Light Italic, its thinnest weights. Used
 Text: Area Normal Extralight for small text and Area Normal Hairline for the biggest sans lines. It comes from the trial files, so it needs a proper licence before launch.
 Numbers: Hanken Grotesk Extra Light, for the small 01, 02, 03 markers. Still open for review.
 Headings are large, tight and light. Small labels are capital letters with wide spacing. Never use bold.
+
+Pills and hover
+There is one pill size on the whole site (26px tall, 12.5px text). Only the colours change: solid dark, outlined, orange outlined for All notes, and two versions for the dark contact block. Hover only changes colour and style. Text never slides, cover images never shrink, and an arrow moves 2px to the right and tips 15 degrees downwards, never upwards.
 
 Shape
 Cards and grid tiles use a 28px corner. The footer block uses 32 to 40px. Buttons and tags are full pills. Lines are 1px at about 15 percent ink.
@@ -41,6 +44,9 @@ Mix the italic serif and the sans inside one headline, the way a designer would,
 Use hairlines and spacing for structure, not shadows and boxes.
 Keep the accent colour rare.
 
+Home page structure
+The home page reads like a notebook index. Small type, hairlines, numbered rows, captions such as Fig. 01 and small capital labels, the way a technical publication sets a contents page. It has a small hero line, three small buttons, then an Index where each old section header is one line and a link. Below that are Selected work as figures and the Latest field notes, then the personal grid, then the contact block. Everything is a link. The part of the page outside the personal grid must stay within two screens. The personal grid is exempt, because it is the personal side of the site.
+
 Routes
-/ is the home page. /projects, /blog, /story and /personal are the main pages. /v1 is the previous design.
+/ is the home page. /projects, /experience, /blog, /story and /personal are the main pages. Each field note lives at /blog/<name>. /v1 is the previous design.
 Menu links and site details are kept in config/site.ts so they change in one place.

@@ -48,4 +48,19 @@ export const SITE = {
       years: "Dates to come",
     },
   ],
+  /** Latest field notes, newest first. Each becomes a page at /blog/<slug>. */
+  notes: [
+    {
+      slug: "profiling-a-slow-database-query",
+      title: "What I learned profiling a slow database query",
+    },
+    {
+      slug: "testing-code-written-by-coding-agents",
+      title: "How I test code written by coding agents",
+    },
+    {
+      slug: "simplest-architecture-that-satisfies-the-requirements",
+      title: "The simplest architecture that satisfies these requirements",
+    },
+  ],
 };

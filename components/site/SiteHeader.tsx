@@ -41,7 +41,11 @@ export default function SiteHeader() {
           className="text-[1.15rem] leading-none tracking-tight text-ink"
           aria-label={`${SITE.name}, home`}
         >
-          Okoye <span className="font-display font-light italic">Divine</span>
+          Okoye{" "}
+          <span className="font-display text-[1.25em] font-light italic">
+            Divine
+          </span>
+          .
         </Link>
 
         <div className="flex items-center gap-8">

@@ -12,7 +12,7 @@ interface IProps {
 export default function ProjectCard({ index, name, tags, summary }: IProps) {
   return (
     <Link href="/projects" className="group block">
-      <Placeholder className="aspect-[4/3] transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[0.985] md:aspect-[5/4]">
+      <Placeholder className="aspect-[4/3] md:aspect-[5/4]">
         Cover image for {name}
       </Placeholder>
       <div className="mt-6 flex items-start justify-between gap-6">
