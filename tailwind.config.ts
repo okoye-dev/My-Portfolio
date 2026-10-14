@@ -17,6 +17,10 @@ const config: Config = {
           white: "#F0F0F0",
         },
       },
+      fontFamily: {
+        display: ["var(--font-display)", "serif"],
+        num: ["var(--font-num)", "sans-serif"],
+      },
       animation: {
         "spin-slow": "spin 8s linear infinite",
       },

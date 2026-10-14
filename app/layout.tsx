@@ -1,11 +1,32 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({
-  subsets: ["latin"],
+const display = localFont({
+  src: [
+    {
+      path: "./fonts/area/AreaNormal-Extralight.otf",
+      weight: "100 900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/area/AreaNormal-ExtralightItalic.otf",
+      weight: "100 900",
+      style: "italic",
+    },
+  ],
+  variable: "--font-display",
   display: "swap",
 });
+
+const numerals = Hanken_Grotesk({
+  subsets: ["latin"],
+  weight: "200",
+  variable: "--font-num",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Okoye Divine - Product & Graphic Designer",
   description:
@@ -19,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${display.variable} ${numerals.variable} font-display antialiased`}>{children}</body>
     </html>
   );
 }

@@ -21,7 +21,7 @@ const ExperienceCard: FC<IProps> = ({
   return (
     <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between">
       <div className="flex flex-col gap-4 md:w-3/4">
-        <h2 className="text-xs font-extralight text-white/60 sm:text-sm">
+        <h2 className="font-num text-xs font-extralight text-white/60 sm:text-sm">
           {timeFrame}
         </h2>
 

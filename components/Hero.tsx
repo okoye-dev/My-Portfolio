@@ -20,12 +20,12 @@ const Hero: FC = () => {
       <h2 className="text-xl z-10 lg:text-2xl">Hi, I&apos;m Divine</h2>
 
       <span className="text-4xl z-10 tracking-[-0.075em] md:text-5xl lg:pr-[10vw] lg:text-6xl xl:text-7xl">
-        I&apos;m a product designer with 4 years of{" "}
-        <span className="inline text-gray-white/60">experience</span> in
+        I&apos;m a product designer with <span className="font-num">4</span> years of{" "}
+        <span className="inline italic text-gray-white/60">experience</span> in
         crafting engaging{" "}
-        <span className="inline text-gray-white/60">user experiences</span>{" "}
+        <span className="inline italic text-gray-white/60">user experiences</span>{" "}
         across web and mobile platforms, alongside graphic and{" "}
-        <span className="inline text-gray-white/60">brand</span> identity
+        <span className="inline italic text-gray-white/60">brand</span> identity
         design.
       </span>
 
